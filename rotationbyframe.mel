@@ -1,0 +1,41 @@
+int $frame = `currentTime -q`;
+
+if ($frame >= 190 && $frame <= 260) {
+PrednjiLeviTocak1.rotateX = abs(Corvette.translateX) * 50;
+PrednjiDesniTocak1.rotateX = abs(Corvette.translateX) * 50;
+ZadnjiLeviTocak1.rotateX = abs(Corvette.translateX) * 50;
+ZadnjiDesniTocak1.rotateX = abs(Corvette.translateX) * 50;
+}else{
+PrednjiLeviTocak1.rotateX = abs(Corvette.translateX) * 20;
+PrednjiDesniTocak1.rotateX = abs(Corvette.translateX) * 20;
+ZadnjiLeviTocak1.rotateX = abs(Corvette.translateX) * 20;
+ZadnjiDesniTocak1.rotateX = abs(Corvette.translateX) * 20;
+}
+merc
+int $frame = `currentTime -q`;
+
+if ($frame >= 180 && $frame <= 205) {
+
+PrednjiLeviTocak.rotateX = abs(|Mercedes.translateX) * 20;
+PrednjiDesniTocak.rotateX = abs(|Mercedes.translateX) * 20;
+
+
+|Mercedes|ZadnjiLeviTocak.rotateX = abs(|Mercedes.translateX) * 50;
+ZadnjiDesniTocak.rotateX = abs(|Mercedes.translateX) * 50;
+
+PrednjiLeviTocak.rotateZ = 0;
+PrednjiDesniTocak.rotateZ = 0;
+
+}else if($frame > 174 && $frame <= 202) {
+PrednjiLeviTocak.rotateZ = $frame * 10;
+PrednjiDesniTocak.rotateZ = $frame * 10;
+
+}else{
+PrednjiLeviTocak.rotateX = abs(|Mercedes.translateX) * 20;
+  PrednjiDesniTocak.rotateX = abs(|Mercedes.translateX) * 20;
+  |Mercedes|ZadnjiLeviTocak.rotateX = abs(|Mercedes.translateX) * 20;
+  ZadnjiDesniTocak.rotateX = abs(|Mercedes.translateX) * 20;
+
+PrednjiLeviTocak.rotateZ = 0;
+PrednjiDesniTocak.rotateZ = 0;
+}
